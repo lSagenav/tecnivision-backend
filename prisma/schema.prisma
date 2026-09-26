@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Category {
+  id        Int       @id @default(autoincrement())
+  name      String    @db.VarChar(100)
+  slug      String    @unique @db.VarChar(120)
+  products  Product[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Product {
+  id          Int         @id @default(autoincrement())
+  name        String      @db.VarChar(150)
+  slug        String      @unique @db.VarChar(180)
+  description String      @db.Text
+  productOptions String?  @db.Text
+  imageUrl    String?     @db.VarChar(500)
+  featured    Boolean     @default(false)
+  available   Boolean     @default(true)
+  branchSlug  String      @default("dorada-caldas") @db.VarChar(80)
+  categoryId  Int
+  category    Category    @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  orderItems  OrderItem[]
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}
+
+model AdminUser {
+  id        Int      @id @default(autoincrement())
+  name      String   @db.VarChar(120)
+  email     String   @unique @db.VarChar(150)
+  password  String   @db.VarChar(255)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Order {
+  id            Int         @id @default(autoincrement())
+  customerName  String      @db.VarChar(120)
+  customerPhone String      @db.VarChar(30)
+  status        OrderStatus @default(PENDING)
+  items         OrderItem[]
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model OrderItem {
+  id        Int      @id @default(autoincrement())
+  orderId   Int
+  productId Int
+  quantity  Int
+  selectedOption String?  @db.VarChar(200)
+  selectedDescription String? @db.Text
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Restrict)
+  createdAt DateTime @default(now())
+}
+
+enum OrderStatus {
+  PENDING
+  SENT
+  CONFIRMED
+  CANCELLED
+}

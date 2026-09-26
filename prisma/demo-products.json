@@ -1,0 +1,22 @@
+[
+  {"slug":"cable-hdmi","name":"Cable HDMI","category":"pc-componentes-y-perifericos","icon":"Cable","descriptions":["HDMI 4K","HDMI 8K"],"options":["4 metros","6 metros","8 metros","10 metros"]},
+  {"slug":"cargador-usb-c","name":"Cargador USB-C","category":"celulares-y-accesorios","icon":"PlugZap","descriptions":["Carga rápida de 20 W","Carga rápida de 45 W","Carga rápida de 65 W"],"options":["Blanco","Negro"]},
+  {"slug":"camara-wifi","name":"Cámara WiFi interior","category":"camaras-de-seguridad-y-circuito-cerrado","icon":"Cctv","descriptions":["Resolución Full HD","Resolución 2K","Resolución 4K"],"options":["Sin memoria","Memoria de 64 GB","Memoria de 128 GB"]},
+  {"slug":"regleta","name":"Regleta eléctrica","category":"otros","icon":"Plug","descriptions":["4 tomas","6 tomas","8 tomas"],"options":["Cable de 1 metro","Cable de 3 metros","Cable de 5 metros"]},
+  {"slug":"teclado","name":"Teclado mecánico","category":"pc-componentes-y-perifericos","icon":"Keyboard","descriptions":["Switch rojo silencioso","Switch azul con clic","Switch café táctil"],"options":["Negro","Blanco","Gris"]},
+  {"slug":"cable-usb","name":"Cable de carga USB","category":"celulares-y-accesorios","icon":"Cable","descriptions":["USB-C a USB-C","USB-A a USB-C","USB-A a Lightning"],"options":["1 metro","2 metros","3 metros"]},
+  {"slug":"camara-exterior","name":"Cámara para exterior","category":"camaras-de-seguridad-y-circuito-cerrado","icon":"Camera","descriptions":["Visión nocturna infrarroja","Visión nocturna a color"],"options":["Lente de 2.8 mm","Lente de 3.6 mm","Lente de 6 mm"]},
+  {"slug":"soporte-tv","name":"Soporte para televisor","category":"otros","icon":"Tv","descriptions":["Soporte fijo","Soporte inclinable","Soporte articulado"],"options":["32 a 43 pulgadas","43 a 55 pulgadas","55 a 75 pulgadas"]},
+  {"slug":"mouse","name":"Mouse inalámbrico","category":"pc-componentes-y-perifericos","icon":"Mouse","descriptions":["Conexión Bluetooth","Conexión USB inalámbrica","Conexión dual"],"options":["Negro","Blanco","Azul"]},
+  {"slug":"audifonos","name":"Audífonos para celular","category":"celulares-y-accesorios","icon":"Headphones","descriptions":["Bluetooth con micrófono","Cable USB-C","Cable de 3.5 mm"],"options":["Negro","Blanco","Rojo"]},
+  {"slug":"grabador","name":"Grabador de seguridad","category":"camaras-de-seguridad-y-circuito-cerrado","icon":"HardDrive","descriptions":["DVR de 4 canales","DVR de 8 canales","DVR de 16 canales"],"options":["Sin disco","Disco de 1 TB","Disco de 2 TB"]},
+  {"slug":"parlante","name":"Parlante portátil","category":"otros","icon":"Speaker","descriptions":["Potencia de 10 W","Potencia de 20 W","Potencia de 40 W"],"options":["Negro","Azul","Rojo"]},
+  {"slug":"ssd","name":"Unidad SSD","category":"pc-componentes-y-perifericos","icon":"HardDrive","descriptions":["SSD SATA de 2.5 pulgadas","SSD M.2 NVMe"],"options":["256 GB","512 GB","1 TB","2 TB"]},
+  {"slug":"bateria-portatil","name":"Batería portátil","category":"celulares-y-accesorios","icon":"BatteryCharging","descriptions":["Carga estándar","Carga rápida USB-C","Carga inalámbrica"],"options":["10000 mAh","20000 mAh","30000 mAh"]},
+  {"slug":"alarma","name":"Kit de alarma","category":"camaras-de-seguridad-y-circuito-cerrado","icon":"ShieldCheck","descriptions":["Conexión WiFi","Conexión WiFi y celular"],"options":["2 sensores","4 sensores","6 sensores","8 sensores"]},
+  {"slug":"lampara","name":"Lámpara de escritorio","category":"otros","icon":"LampDesk","descriptions":["Luz blanca","Luz cálida","Luz regulable"],"options":["Base negra","Base blanca","Base gris"]},
+  {"slug":"hub","name":"Hub USB-C","category":"pc-componentes-y-perifericos","icon":"Usb","descriptions":["Hub de 4 puertos","Hub de 7 puertos","Hub de 10 puertos"],"options":["Gris","Plateado","Negro"]},
+  {"slug":"soporte-celular","name":"Soporte para celular","category":"celulares-y-accesorios","icon":"Smartphone","descriptions":["Soporte de escritorio","Soporte para carro","Soporte para bicicleta"],"options":["Negro","Gris","Blanco"]},
+  {"slug":"cable-red","name":"Cable de red para cámaras","category":"camaras-de-seguridad-y-circuito-cerrado","icon":"Network","descriptions":["Cable Cat 5e","Cable Cat 6","Cable Cat 6 exterior"],"options":["5 metros","10 metros","20 metros","30 metros"]},
+  {"slug":"ups","name":"UPS de respaldo","category":"otros","icon":"BatteryFull","descriptions":["UPS de 600 VA","UPS de 1000 VA","UPS de 1500 VA"],"options":["4 tomas","6 tomas","8 tomas"]}
+]

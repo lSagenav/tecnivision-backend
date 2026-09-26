@@ -1,0 +1,1 @@
+import {Router} from "express";import rateLimit from "express-rate-limit";import {create} from "./orders.controller.js";export const ordersRouter=Router();ordersRouter.post("/",rateLimit({windowMs:60000,limit:10}),create);
